@@ -559,6 +559,24 @@ zabbix_export:
             - value: '7'
               newvalue: lowerLayerDow
   graphs:
+    - uuid: 4a74e5ea505a43bea4b56a34e9f80926
+      name: 'Generic by SNMP: Ping time'
+      ymin_type_1: FIXED
+      graph_items:
+        - color: 199C0D
+          calc_fnc: ALL
+          item:
+            host: 'Generic by SNMP'
+            key: icmppingsec
+    - uuid: 307cfed25c3f4187a8aa152d393d2c29
+      name: 'Generic by SNMP: Ping lost'
+      ymin_type_1: FIXED
+      graph_items:
+        - color: 199C0D
+          calc_fnc: ALL
+          item:
+            host: 'Generic by SNMP'
+            key: icmppingloss
     - uuid: 7445893be4c448ceae6c01ccc251aef0
       name: 'EdgeMAX: CPU Load'
       ymin_type_1: FIXED
